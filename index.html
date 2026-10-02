@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+      <!-- NAVBAR -->
+        <nav class="navbar">
+          <img src="./images/home pictures/Logo.png" alt="">
+
+          <div class="nav-links-wrapper" id="navLinksWrapper">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="plugs.html">Plugs</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="become_plug.html">Become a Plug</a></li>
+                  <li class="mobile-only-link"><a href="login.html">Log in</a></li>
+                  <li class="mobile-only-link"><a href="sign_up.html" class="mobile-signup">Sign up</a></li>
+              </ul>
+          </div>
+
+          <div class="button desktop-only">
+              <a href="login.html" class="log-in">Log in</a>
+              <a href="sign_up.html" class="sign-up">Sign up</a>
+          </div>
+
+          <img class="icon-menu" id="hamburgerIcon" src="./images/home pictures/icon-hamburger.svg" alt="">
+          <img  class="icon-close" src="./images/home pictures/icon-close.svg" alt="">
+        </nav>
+
+        <div class="nav-overlay" id="navOverlay"></div>
+    </header>
+    <main>
+      <!-- FIRST SLIDE -->
+      <div class="main-left">
+        <div class="slides">
+          <!-- Slide 1 -->
+           <div class="slide active">
+             <h1>Find the right <span class="highlight">plug.</span></h1>
+             <p>Discover trusted service providers around your campus and connect directly with the right student artisan or tech specialists in minutes</p>
+             <a href="services.html" class="btn-explore">Find a service </a>
+             <a href="#" class="see-top-plugs">See Top Plugs</a>
+           </div>
+
+           <!-- Slide 2 -->
+            <div class="slide">
+              <h1>Need a service? <span class="highlight">We've got you.</span></h1>
+              <p>From fast printing and branding to MacBook screen fixes, bespoke native tailoring, makeup, and rush laundry.</p>
+              <a href="services.html" class="btn-explore">Explore Services</a>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide">
+             <h1>Got a Skill? <span class="highlight">Become the Plug</span></h1>
+             <p>Put your craft directly in front of 25,000+ campus students seeking high quality, peer-reviewed solutions today</p>
+             <a href="#" class="btn-explore">Become a Plug</a>
+            </div>
+        </div>
+        <div class="slide-dots">
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+        </div>
+      </div>
+
+      <div class="search-bar">
+       <div class="search-container">
+          <div class="search-input">
+           <span class="icon-search">🔍</span>
+           <input type="text" placeholder="What service are you looking for? (e.g. Graphics, Phone repair, Braids)">
+          </div>
+          <div class="location-input">
+           <span class="icon-location">📍</span>
+           <select name="location" id="location">
+             <option value="">University of Ilorin</option>
+             <option value="off-campus">Off Campus</option>
+             <option value="on-campus">On Campus</option>
+            </select>
+          </div>
+          <button class="search-btn">Search Plugs →</button>
+        </div>
+        <div class="hot-searches">
+         <span>Hot Searches:</span>
+         <a href="#">Graphics Design</a>
+         <a href="#">Barbing</a>
+         <a href="#">Hairdresser</a>
+         <a href="#">Laundry</a>
+         <a href="#">Tailoring</a>
+         <a href="#">Photography</a>
+         <a href="#">Electronic Repairs</a>
+        </div>
+      </div>
+    </main>
+
+    <!-- HOW THE PLUG WORKS -->
+    <section class="about">
+      <div class="top-about">
+       <p class="tag">FAST & SIMPLE CONNECTION</p>
+       <h2>How <span class="highlight">THE PLUG</span> Works</h2>
+       <p class="subtext">Say goodbye to stressful WhatsApp begging and unreliable vendors</p>
+      </div>
+      <div class="about-details">
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <h3>Search your need</h3>
+          <p>Type whatever you need or pick from our curated categories. Every service is at your fingertips.</p>
+          <span class="step-tag">📋 Real-time local inventory</span>
+        </div>
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <h3>Compare and Vet</h3>
+          <p>Inspect verified badges, real student project portfolios, peer review ratings and transparent upfront pricing cards</p>
+          <span class="step-tag">🪪 Identity & matric verified</span>
+        </div>
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <h3>Connect Direct</h3>
+          <p>Contact your chosen plug directly via instant on-site messaging. Arrange your service and pay safely.</p>
+          <span class="step-tag">🔒 Zero middleman fees</span>
+        </div>
+     </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="categories">
+      <div class="categories-header">
+        <div class="categories-heading">
+         <p class="tag">ON-DEMAND DIRECTORY</p>
+         <h2>What do you need?</h2>
+         <p class="subtext">Discover vetted campus talent ready to deliver on-demand right to your hostel or campus faculty.</p>
+        </div>
+        <a href="services.html" class="view-all">View All Service Categories →</a>
+      </div>
+
+      <div class="categories-grid">
+
+        <div class="category-card">
+          <div class="category-icon">🎨</div>
+          <span class="active-count">38 ACTIVE PLUGS</span>
+          <h3>Graphics Design</h3>
+          <p>Logos, Flyers, UI/UX</p>
+        </div>
+
+        <div class="category-card">
+         <div class="category-icon">🖨️</div>
+         <span class="active-count">24 ACTIVE PLUGS</span>
+         <h3>Printing & Copy</h3>
+         <p>Project binding, stickers, bulk</p>
+        </div>
+
+        <div class="category-card">
+         <div class="category-icon">💻</div>
+         <span class="active-count">19 ACTIVE PLUGS</span>
+         <h3>Laptop & Phone</h3>
+         <p>Screens, OS, diagnostics</p>
+        </div>
+
+        <div class="category-card">
+         <div class="category-icon">📷</div>
+         <span class="active-count">31 ACTIVE PLUGS</span>
+         <h3>Photography</h3>
+         <p>Convocation, birthdays, reels</p>
+        </div>
+
+        <div class="category-card">
+         <div class="category-icon">✂️</div>
+         <span class="active-count">42 ACTIVE PLUGS</span>
+         <h3>Barbing & Hair</h3>
+         <p>Fade, waves, hostel room calls</p>
+        </div>
+
+        <div class="category-card">
+         <div class="category-icon">👕</div>
+         <span class="active-count">18 ACTIVE PLUGS</span>
+         <h3>Laundry & Dry</h3>
+         <p>24hr turnaround, ironing</p>
+        </div>
+
+        <div class="category-card">
+         <div class="category-icon">🧵</div>
+         <span class="active-count">27 ACTIVE PLUGS</span>
+         <h3>Fashion & Tailor</h3>
+         <p>Bespoke native, streetwear</p>
+        </div>
+
+        <div class="category-card">
+         <div class="category-icon">🍴</div>
+         <span class="active-count">54 ACTIVE PLUGS</span>
+         <h3>Food & Pastries</h3>
+         <p>Shawarma, meal preps, bakes</p>
+        </div>
+
+        <div class="category-card">
+         <div class="category-icon">💻</div>
+         <span class="active-count">22 ACTIVE PLUGS</span>
+         <h3>Tutoring & Code</h3>
+         <p>Calculus, Python, ACC 101</p>
+        </div>
+
+        <div class="category-card">
+         <div class="category-icon">💅</div>
+         <span class="active-count">35 ACTIVE PLUGS</span>
+         <h3>Beauty & Lashes</h3>
+         <p>Nails, makeup, wigs revamping</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- POPULAR PLUGS HEADER-->
+    <section class="popular-plugs">
+      <div class="plugs-header">
+        <div class="plugs-heading">
+         <p class="tag">TOP VERIFIED TALENT</p>
+         <h2>Popular Plugs On Campus</h2>
+        </div>
+        <div class="hotspot-filters">
+         <button class="filter active">● All Hotspots</button>
+         <button class="filter">On-Campus</button>
+         <button class="filter">Off-Campus</button>
+        </div>
+      </div>
+     <!-- THE CARDS -->
+      <div class="plugs-grid">
+
+        <div class="plug-card">
+          <div class="plug-image">
+           <img src="./images/home pictures/Custom Web Development & AI Solutions.jpg" alt="David Adebayo">
+           <span class="rating">★ 4.97 (142)</span>
+           <span class="price">From ₦3,500</span>
+          </div>
+          <div class="plug-info">
+           <span class="category">Graphics</span>
+           <h3>David Adebayo</h3>
+           <p class="business-name">David Graphics Studio</p>
+           <p class="location">📍 University Road, Tanke</p>
+           <p class="description">Specializes in high-impact student brand identity, event posters, and tech products...</p>
+            <div class="plug-actions">
+             <button class="btn-view">View Profile</button>
+             <button class="btn-whatsapp">💬 WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="plug-card">
+          <div class="plug-image">
+           <img src="./images/home pictures/Kusuka Yeboyebo.jpg" alt="Amina Yusuf">
+           <span class="rating">★ 4.95 (98)</span>
+           <span class="price">From ₦5,000</span>
+          </div>
+          <div class="plug-info">
+           <span class="category">Beauty & Hair</span>
+           <h3>Amina Yusuf</h3>
+           <p class="business-name">Luxe Braids & Styling</p>
+           <p class="location">📍 Sanrab / Tanke</p>
+           <p class="description">Knotless braids, wig revamping, and clean scalp treatment. Hostel room visits...</p>
+            <div class="plug-actions">
+             <button class="btn-view">View Profile</button>
+             <button class="btn-whatsapp">💬 WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="plug-card">
+          <div class="plug-image">
+           <img src="./images/home pictures/Tech Repair.jpg" alt="Tobi Bakare">
+           <span class="rating">★ 4.92 (184)</span>
+           <span class="price">From ₦4,000</span>
+          </div>
+          <div class="plug-info">
+           <span class="category">Repairs</span>
+           <h3>Tobi Tech Services</h3>
+           <p class="business-name">Oluwatobi Bakare</p>
+           <p class="location">📍 SUB / Oke-Odo</p>
+           <p class="description">MacBook and Windows board repair, SSD upgrades, rapid screen replacement wit...</p>
+            <div class="plug-actions">
+             <button class="btn-view">View Profile</button>
+             <button class="btn-whatsapp">💬 WhatsApp</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="plug-card">
+          <div class="plug-image">
+           <img src="./images/home pictures/Photographer.jpg" alt="Chidinma Eze">
+           <span class="rating">★ 4.98 (115)</span>
+           <span class="price">From ₦12,000</span>
+          </div>
+          <div class="plug-info">
+           <span class="category">Photography</span>
+           <h3>LensCraft Visuals</h3>
+           <p class="business-name">Chidinma Eze</p>
+           <p class="location">📍 Main Campus & GRA</p>
+           <p class="description">Professional campus portraits, graduation shoots, and cinematic event...</p>
+            <div class="plug-actions">
+             <button class="btn-view">View Profile</button>
+             <button class="btn-whatsapp">💬 WhatsApp</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+           <img src="./images/home pictures/Logo.png" alt="The Plug">
+           <span>THE PLUG</span>
+          </div>
+         <p class="footer-tagline">"The Connection You Need."</p>
+         <p class="footer-desc">Connecting Nigerian students and campus communities with vetted, skilled student and local service plugs.</p>
+        </div>
+  
+        <div class="footer-links">
+         <h4>Explore</h4>
+         <a href="services.html">Services</a>
+         <a href="plugs.html">Plugs</a>
+        </div>
+  
+        <div class="footer-links">
+         <h4>Community</h4>
+         <a href="become_plug.html">Become a Plug</a>
+        </div>
+  
+        <div class="footer-links">
+         <h4>Company</h4>
+         <a href="about.html">About Us</a>
+         <a href="#">Contact Support</a>
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+       <p>© 2026 THE PLUG || Built with pride for campus hustle.</p>
+       <p class="footer-location">UNILORIN</p>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./plugs.css">
+    <title>Plugs</title>
+</head>
+<body>
+    <header>
+      <!-- NAVBAR -->
+        <nav class="navbar">
+          <img src="./images/home pictures/Logo.png" alt="">
+
+          <div class="nav-links-wrapper" id="navLinksWrapper">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="plugs.html">Plugs</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="become_plug.html">Become a Plug</a></li>
+                  <li class="mobile-only-link"><a href="login.html">Log in</a></li>
+                  <li class="mobile-only-link"><a href="sign_up.html" class="mobile-signup">Sign up</a></li>
+              </ul>
+          </div>
+
+          <div class="button desktop-only">
+              <a href="login.html" class="log-in">Log in</a>
+              <a href="sign_up.html" class="sign-up">Sign up</a>
+          </div>
+
+          <img class="icon-menu" id="hamburgerIcon" src="./images/home pictures/icon-hamburger.svg" alt="">
+          <img  class="icon-close" src="./images/home pictures/icon-close.svg" alt="">
+        </nav>
+
+        <div class="nav-overlay" id="navOverlay"></div>
+    </header>
+    
+    <section class="plugs-hero">
+        <h1>Find Your Plug</h1>
+        <p class="subtext">Connect with verified Nigerian campus talent across your university district. Fast turnaround, direct chat, and escrow safety.</p>
+  
+        <div class="plugs-search-bar">
+          <div class="search-input">
+            <span class="icon-search">🔍</span>
+            <input type="text" placeholder="Search for a service, plug, or business (e.g. 'Graphics', 'David Gr...')">
+          </div>
+          <div class="location-input">
+            <span class="icon-location">📐</span>
+            <select name="campus" id="campus">
+              <option value="">📍 Location</option>
+              <option value="">Off Campus</option>
+              <option value="">On Campus</option>
+            </select>
+          </div>
+          <button class="plugs-search-btn">☰ Search Plugs</button>
+        </div>
+
+        <div class="hot-niches">
+          <span>Hot Niches:</span>
+          <button class="niche-pill active">All</button>
+          <button class="niche-pill">Graphics Design</button>
+          <button class="niche-pill">Repairs & Gadgets</button>
+          <button class="niche-pill">Photography</button>
+          <button class="niche-pill">Hair & Barbing</button>
+          <button class="niche-pill">Laundry & Dryclean</button>
+          <button class="niche-pill">Fashion & Tailoring</button>
+        </div>
+    </section>
+
+    <section class="plugs-grid-section">
+  <div class="plugs-provider-grid">
+
+    <!-- Graphics Design -->
+    <div class="provider-card">
+      <div class="provider-top">
+        <img src="./images/home pictures/Custom Web Development & AI Solutions.jpg" alt="David Adebayo" class="provider-avatar">
+        <span class="provider-price">₦3,500</span>
+      </div>
+      <h3>David Adebayo</h3>
+      <p class="provider-tag">Graphics Design</p>
+      <div class="provider-meta">
+        <span class="provider-rating">★ 4.9 (80 reviews)</span>
+      </div>
+      <p class="provider-location">📍 University Road, Tanke</p>
+      <p class="provider-desc">Delivering punchy brand flyers, tech/startup logos, and academic poster branding...</p>
+      <div class="provider-actions">
+        <button class="btn-view">View Profile</button>
+        <button class="btn-whatsapp">💬 WhatsApp</button>
+      </div>
+    </div>
+
+    <!-- Laptop/Phone Repair -->
+    <div class="provider-card">
+      <div class="provider-top">
+        <img src="./images/home pictures/Tech Repair.jpg" alt="Engr. Oluwatobi Bakare" class="provider-avatar">
+        <span class="provider-price">₦4,000</span>
+      </div>
+      <h3>Engr. Oluwatobi Bakare</h3>
+      <p class="provider-tag">Laptop & Phone Repair</p>
+      <div class="provider-meta">
+        <span class="provider-rating">★ 4.8 (124 reviews)</span>
+      </div>
+      <p class="provider-location">📍 SUB, Oke-Odo</p>
+      <p class="provider-desc">Specialist in motherboard-level soldering, battery replacement, and liquid damage recovery.</p>
+      <div class="provider-actions">
+        <button class="btn-view">View Profile</button>
+        <button class="btn-whatsapp">💬 WhatsApp</button>
+      </div>
+    </div>
+
+    <!-- Barbing -->
+    <div class="provider-card">
+      <div class="provider-top">
+        <img src="./images/Plugs pics/Ballers CUTS.jpg" alt="Ballerz Cuts" class="provider-avatar">
+        <span class="provider-price">₦2,000</span>
+      </div>
+      <h3>Ballerz Cuts</h3>
+      <p class="provider-tag">Barbing & Grooming</p>
+      <div class="provider-meta">
+        <span class="provider-rating">★ 4.9 (96 reviews)</span>
+      </div>
+      <p class="provider-location">📍 Main Campus, GRA</p>
+      <p class="provider-desc">Clean fades, sharp beard lines, and quick hostel room visits on request.</p>
+      <div class="provider-actions">
+        <button class="btn-view">View Profile</button>
+        <button class="btn-whatsapp">💬 WhatsApp</button>
+      </div>
+    </div>
+
+    <!-- Braids/Hair -->
+    <div class="provider-card">
+      <div class="provider-top">
+        <img src="./images/Plugs pics/Amina Yusuf.jpg" alt="Amina Yusuf" class="provider-avatar">
+        <span class="provider-price">₦5,000</span>
+      </div>
+      <h3>Amina Yusuf</h3>
+      <p class="provider-tag">Braids & Hair Styling</p>
+      <div class="provider-meta">
+        <span class="provider-rating">★ 4.95 (98 reviews)</span>
+      </div>
+      <p class="provider-location">📍 Sanrab, Tanke</p>
+      <p class="provider-desc">Specializing in knotless braids, wig revamping, and clean scalp treatment. Hostel room visits...</p>
+      <div class="provider-actions">
+        <button class="btn-view">View Profile</button>
+        <button class="btn-whatsapp">💬 WhatsApp</button>
+      </div>
+    </div>
+
+    <!-- Tutoring -->
+    <div class="provider-card">
+      <div class="provider-top">
+        <img src="./images/Plugs pics/Kester Ibe" alt="Kester Ibe" class="provider-avatar">
+        <span class="provider-price">₦2,000</span>
+      </div>
+      <h3>Kester Ibe</h3>
+      <p class="provider-tag">Maths & Coding Tutor</p>
+      <div class="provider-meta">
+        <span class="provider-rating">★ 4.9 (61 reviews)</span>
+      </div>
+      <p class="provider-location">📍 Tanke Campus Gate</p>
+      <p class="provider-desc">Clear-cut Calculus, Linear Algebra, and Python tutorials with hands-on practice sessions.</p>
+      <div class="provider-actions">
+        <button class="btn-view">View Profile</button>
+        <button class="btn-whatsapp">💬 WhatsApp</button>
+      </div>
+    </div>
+
+    <!-- Makeup/Lashes -->
+    <div class="provider-card">
+      <div class="provider-top">
+        <img src="./images/Plugs pics/Blessing Adaku.jpg" alt="Blessing Adaku" class="provider-avatar">
+        <span class="provider-price">₦6,500</span>
+      </div>
+      <h3>Blessing Adaku</h3>
+      <p class="provider-tag">Makeup & Lashes Artistry</p>
+      <div class="provider-meta">
+        <span class="provider-rating">★ 4.97 (73 reviews)</span>
+      </div>
+      <p class="provider-location">📍 Challenge & Garage area</p>
+      <p class="provider-desc">Bespoke glam makeup for occasions, lash extensions, and touch-up sessions.</p>
+      <div class="provider-actions">
+        <button class="btn-view">View Profile</button>
+        <button class="btn-whatsapp">💬 WhatsApp</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+     <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+           <img src="./images/home pictures/Logo.png" alt="The Plug">
+           <span>THE PLUG</span>
+          </div>
+         <p class="footer-tagline">"The Connection You Need."</p>
+         <p class="footer-desc">Connecting Nigerian students and campus communities with vetted, skilled student and local service plugs.</p>
+        </div>
+  
+        <div class="footer-links">
+         <h4>Explore</h4>
+         <a href="services.html">Services</a>
+         <a href="plugs.html">Plugs</a>
+        </div>
+  
+        <div class="footer-links">
+         <h4>Community</h4>
+         <a href="become_plug.html">Become a Plug</a>
+        </div>
+  
+        <div class="footer-links">
+         <h4>Company</h4>
+         <a href="about.html">About Us</a>
+         <a href="#">Contact Support</a>
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+       <p>© 2026 THE PLUG || Built with pride for campus hustle.</p>
+       <p class="footer-location">UNILORIN</p>
+      </div>
+    </footer>
+    
+
+  <script src="./index.js"></script>  
+</body>
+</html>

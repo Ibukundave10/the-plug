@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <header>
+         <nav class="navbar">
+          <img src="./images/home pictures/Logo.png" alt="">
+
+          <div class="nav-links-wrapper" id="navLinksWrapper">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="plugs.html">Plugs</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="become_plug.html">Become a Plug</a></li>
+                  <li class="mobile-only-link"><a href="login.html">Log in</a></li>
+                  <li class="mobile-only-link"><a href="sign_up.html" class="mobile-signup">Sign up</a></li>
+              </ul>
+          </div>
+
+          <div class="button desktop-only">
+              <a href="login.html" class="log-in">Log in</a>
+              <a href="sign_up.html" class="sign-up">Sign up</a>
+          </div>
+
+          <img class="icon-menu" id="hamburgerIcon" src="./images/home pictures/icon-hamburger.svg" alt="">
+          <img  class="icon-close" src="./images/home pictures/icon-close.svg" alt="">
+        </nav>
+
+        <div class="nav-overlay" id="navOverlay"></div>
+    </header>
+
+    <section class="auth-wrapper signup-wrapper">
+        <div class="auth-grid">
+
+            <!-- LEFT: SIGNUP FORM -->
+            <div class="auth-form-card">
+                <span class="signup-tag">● Campus Registration / Join the Network</span>
+                <h1>Create your account on THE PLUG</h1>
+                <p class="auth-subtext">Join 14,200+ students and verified campus plugs across UNILORIN, UNILAG, UI, and OAU.</p>
+
+                <label class="auth-label">Select Your Role</label>
+                <div class="auth-role-toggle">
+                    <button type="button" class="role-option active" data-role="student">
+                        <span class="role-icon">🎓</span>
+                        <span class="role-text">
+                            <strong>I'm a Student</strong>
+                            <small>Looking to hire verified plugs & get services</small>
+                        </span>
+                    </button>
+                    <button type="button" class="role-option" data-role="plug">
+                        <span class="role-icon">🛠️</span>
+                        <span class="role-text">
+                            <strong>I'm a Plug</strong>
+                            <small>Looking to showcase skills & earn on campus</small>
+                        </span>
+                    </button>
+                </div>
+
+                <form id="signupForm">
+                    <div class="auth-field">
+                        <label>Full Name</label>
+                        <div class="auth-input-wrap">
+                            <span class="auth-icon">👤</span>
+                            <input type="text" placeholder="e.g. Damilola Adeleke">
+                        </div>
+                    </div>
+
+                    <div class="auth-field">
+                        <label>Campus Email or WhatsApp Phone</label>
+                        <div class="auth-input-wrap">
+                            <span class="auth-icon">📇</span>
+                            <input type="text" placeholder="e.g. dami@students.unilorin.edu.ng or 0812 345 6789">
+                        </div>
+                    </div>
+
+                    <div class="auth-field">
+                        <label>Select Your Campus / Hotspot Zone</label>
+                        <div class="auth-input-wrap">
+                            <span class="auth-icon">📍</span>
+                            <select>
+                                <option>UNILORIN (Tanke / University Rd / Sanrab)</option>
+                                <option>UNILAG (Akoka / Yaba)</option>
+                                <option>UI (Agbowo / Sabo)</option>
+                                <option>OAU (Ile-Ife)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="bp-row-2">
+                        <div class="auth-field">
+                            <label>Password</label>
+                            <div class="auth-input-wrap">
+                                <span class="auth-icon">🔒</span>
+                                <input type="password" id="signupPassword" placeholder="Create a strong password">
+                                <span class="toggle-password" id="toggleSignupPassword">👁️</span>
+                            </div>
+                        </div>
+                        <div class="auth-field">
+                            <label>Confirm Password</label>
+                            <div class="auth-input-wrap">
+                                <span class="auth-icon">🔑</span>
+                                <input type="password" id="confirmPassword" placeholder="Repeat password">
+                                <span class="toggle-password" id="toggleConfirmPassword">👁️</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <label class="auth-checkbox-row">
+                        <input type="checkbox" required>
+                        I agree to the <strong>Campus Trust Code</strong>, escrow payment terms, and understand that all interactions are backed by peer ID verification.
+                    </label>
+
+                    <button type="submit" class="auth-submit-btn">Create Account →</button>
+                </form>
+
+                <div class="auth-divider"><span>or sign up with</span></div>
+
+                <div class="auth-social-row">
+                    <button class="auth-social-btn">🅖 Continue with Google</button>
+                    <button class="auth-social-btn">💬 Continue with WhatsApp</button>
+                </div>
+
+                <p class="auth-footer-text">
+                    Already have an account? <a href="login.html">Log In</a>
+                </p>
+            </div>
+
+            <!-- RIGHT: SIDEBAR -->
+            <div class="auth-sidebar">
+                <div class="protection-card">
+                    <div class="trust-shield-header">
+                        <span class="trust-shield-icon">🛡️</span>
+                        <div>
+                            <h3>The Campus Trust Shield</h3>
+                            <p class="trust-shield-sub">Secured by Student Escrow</p>
+                        </div>
+                    </div>
+
+                    <div class="protection-item">
+                        <span class="protection-icon">🛡️</span>
+                        <div>
+                            <h4>Zero Fraud Guarantee</h4>
+                            <p>Funds stay held safely in escrow until the job is completed and approved on your campus portal.</p>
+                        </div>
+                    </div>
+
+                    <div class="protection-item">
+                        <span class="protection-icon">🎒</span>
+                        <div>
+                            <h4>Verified Student Network</h4>
+                            <p>Every provider submits institutional matric IDs and hostel location anchors before listing services.</p>
+                        </div>
+                    </div>
+
+                    <div class="protection-item">
+                        <span class="protection-icon">💳</span>
+                        <div>
+                            <h4>Instant Payouts & Low Fees</h4>
+                            <p>Support for fast transfers directly to OPay, PalmPay, Moniepoint, and traditional Nigerian bank accounts.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hustlers-card signup-dispatch-card">
+                    <img src="./images/Sign-up pictures/pic.png" alt="UNILORIN Tanke Dispatch Center">
+                    <div class="dispatch-tag">● UNILORIN TANKE DISPATCH CENTER</div>
+                </div>
+
+                <div class="quote-card">
+                    <p class="quote-text">"Never stress about unverified hostel vendors again. Deal directly with vetted campus peers who know your department and hostel gate."</p>
+                    <div class="quote-author">
+                        <img src="./images/Sign-up pictures/Tunde Alabi.jpg" alt="Tunde Alabi">
+                        <div>
+                            <h5>Tunde Alabi</h5>
+                            <p>Faculty of Engineering, UNILAG</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="signup-stats-bar">
+                    <div class="signup-stat">
+                        <span class="stat-label">Active Today</span>
+                        <strong>1,420+ Plugs</strong>
+                    </div>
+                    <div class="signup-stat">
+                        <span class="stat-label">Paid Out to Students</span>
+                        <strong class="stat-gold">₦18.4M+</strong>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+           <img src="./images/home pictures/Logo.png" alt="The Plug">
+           <span>THE PLUG</span>
+          </div>
+         <p class="footer-tagline">"The Connection You Need."</p>
+         <p class="footer-desc">Connecting Nigerian students and campus communities with vetted, skilled student and local service plugs.</p>
+        </div>
+  
+        <div class="footer-links">
+         <h4>Explore</h4>
+         <a href="services.html">Services</a>
+         <a href="plugs.html">Plugs</a>
+        </div>
+  
+        <div class="footer-links">
+         <h4>Community</h4>
+         <a href="become_plug.html">Become a Plug</a>
+        </div>
+  
+        <div class="footer-links">
+         <h4>Company</h4>
+         <a href="about.html">About Us</a>
+         <a href="#">Contact Support</a>
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+       <p>© 2026 THE PLUG || Built with pride for campus hustle.</p>
+       <p class="footer-location">UNILORIN</p>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>

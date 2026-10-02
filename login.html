@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+         <nav class="navbar">
+          <img src="./images/home pictures/Logo.png" alt="">
+
+          <div class="nav-links-wrapper" id="navLinksWrapper">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="plugs.html">Plugs</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="become_plug.html">Become a Plug</a></li>
+                  <li class="mobile-only-link"><a href="login.html">Log in</a></li>
+                  <li class="mobile-only-link"><a href="sign_up.html" class="mobile-signup">Sign up</a></li>
+              </ul>
+          </div>
+
+          <div class="button desktop-only">
+              <a href="login.html" class="log-in">Log in</a>
+              <a href="sign_up.html" class="sign-up">Sign up</a>
+          </div>
+
+          <img class="icon-menu" id="hamburgerIcon" src="./images/home pictures/icon-hamburger.svg" alt="">
+          <img  class="icon-close" src="./images/home pictures/icon-close.svg" alt="">
+        </nav>
+
+        <div class="nav-overlay" id="navOverlay"></div>
+    </header>
+
+    <section class="auth-wrapper">
+        <span class="auth-breadcrumb">Verified Student Gateway / Nigeria 2025/2026 Academic Session</span>
+
+        <div class="auth-grid">
+
+            <!-- LEFT: LOGIN FORM -->
+            <div class="auth-form-card">
+                <h1>Welcome back to THE PLUG</h1>
+                <p class="auth-subtext">Log in to access your campus network, active orders, and messages.</p>
+
+                <label class="auth-label">Select Your Campus Role</label>
+                <div class="auth-role-toggle">
+                    <button type="button" class="role-option active" data-role="student">
+                        <span class="role-icon">🛍️</span>
+                        <span class="role-text">
+                            <strong>Student / Customer</strong>
+                            <small>Looking to hire campus plugs</small>
+                        </span>
+                    </button>
+                    <button type="button" class="role-option" data-role="provider">
+                        <span class="role-icon">⚙️</span>
+                        <span class="role-text">
+                            <strong>Service Provider <span class="plug-tag">PLUG</span></strong>
+                            <small>Manage gigs, bookings & payouts</small>
+                        </span>
+                    </button>
+                </div>
+
+                <form id="loginForm">
+                    <div class="auth-field">
+                        <label>Campus Email or Phone Number</label>
+                        <div class="auth-input-wrap">
+                            <span class="auth-icon">👤</span>
+                            <input type="text" placeholder="e.g. tunde@students.unilorin.edu.ng or 0812 345 6789">
+                        </div>
+                    </div>
+
+                    <div class="auth-field">
+                        <div class="auth-label-row">
+                            <label>Password</label>
+                            <a href="#" class="forgot-link">Forgot Password?</a>
+                        </div>
+                        <div class="auth-input-wrap">
+                            <span class="auth-icon">🔒</span>
+                            <input type="password" id="passwordInput" placeholder="Enter your secret password">
+                            <span class="toggle-password" id="togglePassword">👁️</span>
+                        </div>
+                    </div>
+
+                    <label class="auth-checkbox-row">
+                        <input type="checkbox">
+                        Remember me on this campus device
+                    </label>
+
+                    <button type="submit" class="auth-submit-btn">Log in to THE PLUG →</button>
+                </form>
+
+                <div class="auth-divider"><span>or continue with</span></div>
+
+                <div class="auth-social-row">
+                    <button class="auth-social-btn">🅖 Continue with Google</button>
+                    <button class="auth-social-btn">💬 WhatsApp OTP</button>
+                </div>
+
+                <p class="auth-footer-text">
+                    New to THE PLUG?
+                    <a href="sign_up.html">Sign up as a Student</a> •
+                    <a href="become_plug.html">Become a Plug</a>
+                </p>
+            </div>
+
+            <!-- RIGHT: SIDEBAR -->
+            <div class="auth-sidebar">
+                <div class="protection-card">
+                    <div class="protection-header">
+                        <span class="protection-label">Live Campus Protection</span>
+                        <span class="protection-status">● Escrow Active</span>
+                    </div>
+
+                    <div class="protection-item">
+                        <span class="protection-icon">🛡️</span>
+                        <div>
+                            <h4>Campus Escrow Protected</h4>
+                            <p>100% money-back guarantee. Funds are safely held in vault until you confirm satisfactory service delivery.</p>
+                        </div>
+                    </div>
+
+                    <div class="protection-item">
+                        <span class="protection-icon">💬</span>
+                        <div>
+                            <h4>Direct Student Chat</h4>
+                            <p>Direct WhatsApp & In-App messaging with verified peers across Tanke, Akoka, Agbowo & OAU campus gates.</p>
+                        </div>
+                    </div>
+
+                    <div class="protection-item">
+                        <span class="protection-icon">💳</span>
+                        <div>
+                            <h4>Instant Campus Payouts</h4>
+                            <p>Instant withdrawals straight to OPay, PalmPay, and Kuda Bank as soon as jobs are signed off.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hustlers-card">
+                    <img src="./images/Login pictures/pic.png" alt="Student hustlers">
+                    <div class="hustlers-overlay">
+                        <span class="hustlers-tag">🎓 Verified Matriculation Ecosystem</span>
+                        <h4>14,200+ Student Hustlers</h4>
+                    </div>
+                    <div class="hustlers-footer">
+                        <div class="hustlers-avatars">
+                            <img src="./images/Login pictures/avatar(1).jpg" alt="">
+                            <img src="./images/Login pictures/avatar(2).jpg" alt="">
+                            <img src="./images/Login pictures/avatar(3).jpg" alt="">
+                            <span class="avatar-more">+4k</span>
+                        </div>
+                        <div class="hustlers-rating">
+                            <strong>4.9 / 5.0</strong>
+                            <span>Peer Trust Rating</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="support-bar">
+                    <span>⚡ Need immediate dispatch help?</span>
+                    <a href="#">Support Desk ↗</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+           <img src="./images/home pictures/Logo.png" alt="The Plug">
+           <span>THE PLUG</span>
+          </div>
+         <p class="footer-tagline">"The Connection You Need."</p>
+         <p class="footer-desc">Connecting Nigerian students and campus communities with vetted, skilled student and local service plugs.</p>
+        </div>
+  
+        <div class="footer-links">
+         <h4>Explore</h4>
+         <a href="services.html">Services</a>
+         <a href="plugs.html">Plugs</a>
+        </div>
+  
+        <div class="footer-links">
+         <h4>Community</h4>
+         <a href="become_plug.html">Become a Plug</a>
+        </div>
+  
+        <div class="footer-links">
+         <h4>Company</h4>
+         <a href="about.html">About Us</a>
+         <a href="#">Contact Support</a>
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+       <p>© 2026 THE PLUG || Built with pride for campus hustle.</p>
+       <p class="footer-location">UNILORIN</p>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
